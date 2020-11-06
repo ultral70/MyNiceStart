@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyNiceStart</string>
+    <string name="username">Usuario</string>
+    <string name="hint_password">Contraseña</string>
 </resources>

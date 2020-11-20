@@ -2,4 +2,9 @@
     <string name="app_name">MyNiceStart</string>
     <string name="username">Usuario</string>
     <string name="hint_password">Contraseña</string>
+    <string name="hint_email">Correro Electrónico</string>
+    <string name="registro">¿No estás registrado? Pulsa aquí</string>
+    <string name="iniciar">Iniciar Sesión</string>
+    <string name="registrar">Regístrate</string>
+    <string name="inicio_sesion">¿Ya tienes una cuenta? \nInicia sesión aquí</string>
 </resources>

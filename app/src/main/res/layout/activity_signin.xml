@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:background="@color/colorAccent">
+    tools:context=".SigninActivity"
+    android:background="@color/fondo_2">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/gitl"
+        android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:scaleType="fitStart"/>
+        app:srcCompat="@drawable/gitl"/>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -25,9 +25,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mani" />
-    <!-- La propiedad fitstart ajusta al inicio de la imagen,
-    lo detecta automáticamente.
-     La propiedad fitXY estira la imagen, funciona mejor fitstart-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username"
@@ -71,12 +68,31 @@
             android:hint="@string/hint_password" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="@dimen/ancho"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:endIconDrawable="@drawable/mail"
+        app:endIconMode="custom"
+        android:layout_marginLeft="@dimen/izquierda"
+        android:layout_marginStart="@dimen/izquierda">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:hint="@string/hint_email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/materialButton"
         android:layout_width="409dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/color_boton"
-        android:text="@string/iniciar"
+        android:text="@string/registrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
@@ -85,17 +101,16 @@
     </com.google.android.material.button.MaterialButton>
 
     <TextView
-        android:id="@+id/registro"
+        android:id="@+id/inicioSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/registro"
+        android:text="@string/inicio_sesion"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         android:layout_marginTop="32dp"
         android:layout_marginStart="@dimen/izquierda"
-        android:layout_marginLeft="@dimen/izquierda"
-        android:onClick="regitro"/>
+        android:layout_marginLeft="@dimen/izquierda"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

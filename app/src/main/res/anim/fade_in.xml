@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/bounce_interpolator">
+
+    <alpha
+        android:duration="3000"
+        android:fromAlpha="0"
+        android:toAlpha="1.0"/>
+    <!-- el duration sirve para saber cuánto dura la animación
+     el from alpha es la opacidad de la que parte,
+     y el toAlpha es la opacidad en la que acaba
+     Podemos añadir una rotación, animación, para
+     poder rotar un elemento mientras se hace el fadeIn
+     La propiedad fillAfter se utiliza para que el elemento,
+     al rotar, no vuelva a su posición original-->
+
+</set>

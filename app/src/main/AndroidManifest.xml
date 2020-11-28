@@ -9,15 +9,30 @@
         android:roundIcon="@mipmap/ic_mani_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyNiceStart">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".ConstrainingActivity"></activity>
+        <activity
+            android:name=".MainActivity2"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".SigninActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SigninActivity"
+            android:theme="@style/NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

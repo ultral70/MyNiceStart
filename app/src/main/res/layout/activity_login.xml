@@ -4,41 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:background="@color/colorAccent">
+    android:background="@color/colorAccent"
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/gitl"
+        android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:scaleType="fitStart"/>
+        app:srcCompat="@drawable/gitl" />
+
+    <!-- La propiedad fitstart ajusta al inicio de la imagen,
+    lo detecta automáticamente.
+     La propiedad fitXY estira la imagen, funciona mejor fitstart-->
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="88dp"
         android:layout_height="88dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mani" />
-    <!-- La propiedad fitstart ajusta al inicio de la imagen,
-    lo detecta automáticamente.
-     La propiedad fitXY estira la imagen, funciona mejor fitstart-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username"
         android:layout_width="@dimen/ancho"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/imageView2"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/izquierda"
         android:layout_marginLeft="@dimen/izquierda"
-        android:layout_marginStart="@dimen/izquierda">
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        android:alpha="0.8">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -51,13 +54,14 @@
         android:id="@+id/password"
         android:layout_width="@dimen/ancho"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/username"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/izquierda"
+        android:layout_marginLeft="@dimen/izquierda"
         app:endIconDrawable="@drawable/lock"
         app:endIconMode="password_toggle"
-        android:layout_marginStart="@dimen/izquierda"
-        android:layout_marginLeft="@dimen/izquierda">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        android:alpha="0.8">
         <!-- La propiedad endIconMode marca hace que aparezca el
         icono de mostrar contraseña al final de la misma, un ojo
         con una barra cruzándolo.
@@ -78,6 +82,7 @@
         android:backgroundTint="@color/color_boton"
         android:text="@string/iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="cambiarVentana2"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintStart_toStartOf="parent">
@@ -88,14 +93,16 @@
         android:id="@+id/registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/registro"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        android:layout_marginTop="32dp"
         android:layout_marginStart="@dimen/izquierda"
         android:layout_marginLeft="@dimen/izquierda"
-        android:onClick="regitro"/>
+        android:layout_marginTop="32dp"
+        android:onClick="regitro"
+        android:text="@string/registro"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,5 @@
     <string name="iniciar">Iniciar Sesión</string>
     <string name="registrar">Regístrate</string>
     <string name="inicio_sesion">¿Ya tienes una cuenta? \nInicia sesión aquí</string>
+    <string name="btn_ok">OK</string>
 </resources>

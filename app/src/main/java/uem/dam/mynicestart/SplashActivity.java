@@ -13,6 +13,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
+/**
+ * Ventana de bienvenida con una animación y un scrim
+ * @author Jorge
+ * @see LoginActivity
+ */
+
+/*
+Con el código de arriba, al crear un javaDoc en tools, generate javaDoc
+se crea un archivo javaDoc en la que se ven todos los comentarios que se
+han realizado en todo el proyecto, utilizando el / * *
+ */
+
 public class SplashActivity extends AppCompatActivity {
 
     ImageView fondo;
@@ -48,7 +60,7 @@ public class SplashActivity extends AppCompatActivity {
                 /*
                 El load puede cargar todoo tipo de imágenes, desde enlaces hasta imágenes físicas
                  */
-                .load("http://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
+                .load(R.drawable.cielo)
                 .centerCrop()
                 .transition(DrawableTransitionOptions.withCrossFade()).placeholder(new ColorDrawable(this.getResources().getColor(R.color.colorAccent)))
                 .into(fondo);

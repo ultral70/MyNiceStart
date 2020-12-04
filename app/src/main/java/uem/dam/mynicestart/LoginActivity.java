@@ -6,6 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * Ventana de Login con espacios para introducir tus datos de inicio
+ * de sesión
+ * @author Jorge
+ * @see SigninActivity
+ */
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override

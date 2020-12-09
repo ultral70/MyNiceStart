@@ -20,8 +20,9 @@
         android:id="@+id/imageView2"
         android:layout_width="88dp"
         android:layout_height="88dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mani" />
@@ -99,13 +100,13 @@
         android:id="@+id/materialButton"
         android:layout_width="409dp"
         android:layout_height="48dp"
-        android:backgroundTint="@color/color_boton"
         android:fontFamily="@font/montserrat"
-        android:text="@string/registrar"
+        android:text="@string/btn_ok"
         app:layout_constraintBottom_toBottomOf="parent"
-
+        style="@style/ButtonStraight"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="cambiarVentana2">
 
     </com.google.android.material.button.MaterialButton>
 
@@ -123,31 +124,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email" />
-
-    <Button
-        android:id="@+id/btnStraight"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="OK"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="@dimen/izquierda"
-        app:layout_constraintTop_toBottomOf="@+id/inicioSesion"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/ButtonStraight"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnOutlined"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="OK"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="@dimen/izquierda"
-        app:layout_constraintTop_toBottomOf="@+id/btnStraight"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/ButtonOutlined"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

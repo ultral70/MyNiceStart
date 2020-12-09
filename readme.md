@@ -1,7 +1,5 @@
 # MyNiceStart
 
-Aplicación MyNiceStart
--------|-------
 [comment]:#(Esto se usa para comentar cosas en el readme, es decir,
  para que no sean visibles para el usuario que lo visualiza en github, por ejemplo)
  

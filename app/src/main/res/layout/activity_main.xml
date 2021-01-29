@@ -4,7 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/lyMain"
     tools:context=".MainActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/mySwipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tapOrSwipeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Mantén o desliza para refrescar"
+            android:textColor="@color/purple_200"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <ImageView
         android:id="@+id/fondo"
@@ -25,5 +46,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- El expandOnClick es diferente al onClick normal
+     Se introduce un icono para que se muestre a la izquierda.
+     Se debe poner un icono normal, no un png
+     El start expanded sirve para que la tarjeta no se
+     expanda al iniciar la activity
+     EL title se usa para que se muestre un texto descriptivo
+     en la tarjeta
+     La animationduration se usa para la duración de la
+     animación de expandir y contraer.
+     el inner_view invoca a un layout que se usa como cualquier otro layout
+     -->
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/profile"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:animationDuration="300"
+        app:expandOnClick="true"
+        app:icon="@drawable/ic_baseline_contact_mail_24"
+        app:inner_view="@layout/expandable_view"
+        app:startExpanded="false"
+        app:title="Passengers"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

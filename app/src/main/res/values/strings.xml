@@ -8,4 +8,12 @@
     <string name="registrar">Regístrate</string>
     <string name="inicio_sesion">¿Ya tienes una cuenta? \nInicia sesión aquí</string>
     <string name="btn_ok">OK</string>
+    <string name="action_settings">Settings</string>
+    <string name="buscar">Buscar</string>
+    <string name="toast_carrito">Yendo a carrilear</string>
+    <string name="toast_refresh">refrescando</string>
+    <string name="nombre">Susan Sarandon</string>
+    <string name="trabajo">Trabaja de Actriz</string>
+    <string name="tv_riconudo">Riconudísimo papá</string>
+    <string name="tv_riconudo2">#toRico</string>
 </resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Para crear este fichero se hace como ua animación, click derecho en res, android resource file, y seleccionar el tipo de archivo, anim menu et. -->
+
+    <item
+        android:id="@+id/edit"
+        android:title="Edit"/>
+
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"/>
+
+</menu>

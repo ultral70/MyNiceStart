@@ -1,16 +1,16 @@
 # MyNiceStart
 
-[comment]:#(Esto se usa para comentar cosas en el readme, es decir,
+[comment]:# (Esto se usa para comentar cosas en el readme, es decir,
  para que no sean visibles para el usuario que lo visualiza en github, por ejemplo)
 
- ##SplashActivity
+ ## SplashActivity
 
  ![](img/trueSplash.png)
  
  La primera imagen de la aplicación es esta: el splash, el cual tiene una animación 
  para el logo de la aplicación y un fondo introducido de un amanecer.
 
- ##LoginActivity
+ ## LoginActivity
 
  ![](img/trueLogin.png)
  
@@ -19,7 +19,7 @@
  si ya estás registrado, un enlace en el texto por si todavía no estás registrado,
  y el botón para acceder a la aplicación.
 
- ##RegiterActivity
+ ## RegiterActivity
 
  ![](img/register.png)
  
@@ -28,7 +28,7 @@
  Si pulsas en el texto vuelves a la ventana de login; también hay un botón para ir a la
  ventana main.
 
- ##MainActivity
+ ## MainActivity
 
  ![](img/imagenMain.png)
  
@@ -38,31 +38,31 @@
  los puntitos se muestra la opción Settings, con 3 opciones, un expandableCardView que
  muestra al usuario actual, y un swipeRefresh, que muestra un snackbar.
 
- ###Menú Contextual
+ ### Menú Contextual
 
  ![](img/MenuContextual.png)
 
  MenuAppBar con 3 opciones, la de los puntitos muestra "Settings".
 
- ###Alert Dialog
+ ### Alert Dialog
 
  ![](img/AlertDialog.png)
 
  Alert Dialog al pulsar en el carrito.
 
- ###SwipeRefresh
+ ### SwipeRefresh
 
  ![](img/SwipeRefresh.png)
 
  Opción para refrescar la vista (Swipe Refresh).
 
- ###Snackbar del Swipe Refresh
+ ### Snackbar del Swipe Refresh
 
  ![](img/SwipeRefreshSnackBar.png)
 
  Snackbar que se muestra al actualizar la vista.
 
- ###Card VIew Expandido
+ ### Card VIew Expandido
 
  ![](img/ExpandableCardView.png)
 
@@ -70,13 +70,13 @@
 
  Una vez registrado, o iniciado sesión, no puedes volver a las ventanas anteriores.
 
- ##Main2
+ ## Main2
 
  ![](img/main2BottomAppBar.png)
   
  En la ventana de main2 solo hay un botón para volver a main, un botón flotante con un
  AppBar, y la flecha para volver a la app anterior.
 
- ##La app también se ha testeado con su pertinente clase creada.
+ ## La app también se ha testeado con su pertinente clase creada.
 
- ##El .aab se encuentra en la carpeta de release, en la vista de project.
+ ## El .aab se encuentra en la carpeta de release, en la vista de project.

@@ -72,7 +72,7 @@
 
  ##Main2
 
- ![](img/mainBottomAppBar.png)
+ ![](img/main2BottomAppBar.png)
   
  En la ventana de main2 solo hay un botón para volver a main, un botón flotante con un
  AppBar, y la flecha para volver a la app anterior.

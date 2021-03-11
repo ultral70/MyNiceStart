@@ -59,6 +59,8 @@ public class SplashActivity extends AppCompatActivity {
         Glide.with(this)
                 /*
                 El load puede cargar todoo tipo de imágenes, desde enlaces hasta imágenes físicas
+                Algunos png no van cuando se quiere hacer un apk, cambiar a jpg u otro tipo,
+                ya que significa que se ha guardado con un formato que no era el real
                  */
                 .load(R.drawable.cielo)
                 .centerCrop()

@@ -16,4 +16,7 @@
     <string name="trabajo">Trabaja de Actriz</string>
     <string name="tv_riconudo">Riconudísimo papá</string>
     <string name="tv_riconudo2">#toRico</string>
+    <string name="app_bar_menu_share">Share</string>
+    <string name="app_bar_menu_bookmark">Bookmark</string>
+    <string name="app_bar_menu_search">Search</string>
 </resources>
